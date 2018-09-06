@@ -422,12 +422,12 @@ Lots of these taken from [this blog](http://www.ardendertat.com/2012/01/09/progr
 * `s.isdigit()`: returns `True` if all characters in `s` are digits
 
 ### Lists
-* `l=[]`: initialize
+* `l=[]`: initialize 
 * `len(l)`: get size
-* `l.append(val)`: append a value
-* `l.insert(i,val)`: insert a value at position
+* `l.append(val)`: append a value -  O(1)
+* `l.insert(i,val)`: insert a value at position - O(n) 
 * `l.extend(lst)`: append all values in a list
-* `l.pop([i])`: remove an item and return it (defaults to last item)
+* `l.pop([i])`: remove an item and return it (defaults to last item) - pop() is O(1), pop(index) is O(n)
 * `x in l`: check membership
 * `l.sort(cmp=None,key=None,reverse=False)`: sort in place
 * `sorted(iterable[, cmp[, key[, reverse]]])`: return a new stably sorted list
